@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/hoangnhobe/Web.git'
+                git url: 'https://github.com/hoangnhobe/Web.git', branch: 'main'
+
             }
         }
         stage('Build') {
